@@ -11,24 +11,35 @@
 </head>
 
 <body>
+
   <!-- Navbar (sit on top) -->
   <div class="top">
-    <div id="myNav">
+    <div>
       <a href="#home" class="button">HOME</a>
       <a href="#about" class="button"><i class="fa fa-user margin-right"></i>ABOUT</a>
       <a href="#portfolio" class="button"><i class="fa fa-th margin-right"></i>PORTFOLIO</a>
       <a href="#contact" class="button"><i class="fa fa-envelope margin-right"></i>CONTACT</a>
-    </div>
+    </div> 
+  </div>
+  
+  <div id="home">
+  <div class="center socialMedia" >
+    <a href="http://www.facebook.com/dianka759" target="_blank"><i class="fa fa-facebook-official hover-opacity">
+      </i></a> |
+    <a href="http://www.linkedin.com/in/diana-krawczyk" target="_blank"><i
+        class="fa fa-linkedin hover-opacity"></i></a> |
+    <a href="http://www.github.com/dianka759" target="_blank"><i class="fa fa-github hover-opacity"></i></a>
+  </div>
   </div>
 
   <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1 opacity-min" id="home">
+  <div class="bgimg-1 opacity-min">
     <div class="display-middle">
       <span class="title">
         <p class="cloud-text cloud-title">Welcome to my Portfolio! :)</p>
       </span>
     </div>
-  </div>
+  </div> 
 
   <!-- Container (About Section) -->
   <div id="about">
@@ -43,7 +54,7 @@
             class="myPic">
           <div class="something">
             <p>Hello, my name is Diana Krawczyk and I am a <span class="animated_rainbow">Full Stack Developer</span>
-              with a BS degree in <b>IT;sysadmin</b> and a
+              with a BS degree in <b>IT:sysadmin</b> and a
               <b>Triple Black Belt Certification</b> from the Coding Dojo Boot camp.
               <br>
               If I had to describe my strong professional attributes, I would include dedication, persistance, and
@@ -80,7 +91,6 @@
         <span class="word red">Java.</span>
         <span class="word orange">MySQL.</span>
         <span class="word red">Flask.</span>
-
       </p>
     </div>
     <!-- First Row -->
@@ -88,19 +98,19 @@
 
       <div class="icons">
         <div class="containerOverlaySmaller">
-          <img class="icon" src="./html-1.svg">
+          <img class="icon" src="img/html-1.svg">
           <div class="overlay">
             <div class="text">HTML5</div>
           </div>
         </div>
         <div class="containerOverlaySmaller">
-          <img class="icon" src="./css.png">
+          <img class="icon" src="img/css.png">
           <div class="overlay">
             <div class="text">CSS3</div>
           </div>
         </div>
         <div class="containerOverlaySmaller">
-          <img class="icon" src="./javascript.png">
+          <img class="icon" src="img/javascript.png">
           <div class="overlay">
             <div class="text">JavaScript</div>
           </div>
@@ -113,19 +123,19 @@
           </div>
         </div>
         <div class="containerOverlaySmaller">
-          <img class="icon" src="./java.png">
+          <img class="icon" src="img/java.png">
           <div class="overlay">
             <div class="text">Java</div>
           </div>
         </div>
         <div class="containerOverlaySmaller">
-          <img class="icon" src="./mysql.png">
+          <img class="icon" src="img/mysql.png">
           <div class="overlay">
             <div class="text">MySQL</div>
           </div>
         </div>
         <div class="containerOverlaySmaller">
-          <img class="icon" src="./flask2.png">
+          <img class="icon" src="img/flask2.png">
           <div class="overlay">
             <div class="text">Flask</div>
           </div>
@@ -133,7 +143,7 @@
       </div>
       <div class="container_bottom">
         <div class="containerOverlay">
-          <img style="height: 120px" src="./mern.png">
+          <img style="height: 120px" src="img/mern.png">
           <div class="overlay">
             <div class="text">MongoDB | Express.js | React | Node.js</div>
           </div>
@@ -156,7 +166,7 @@
       <div class="myWorkContainer">
         <div class="projects">
           <div class="project margin-right2 margin-bottomSmall hideme">
-            <video height="350" onmouseover="this.play()" onmouseout="this.pause()" poster="./codingkiwi.png" controls>
+            <video height="350" onmouseover="this.play()" onmouseout="this.pause()" poster="img/codingkiwi.png" controls>
               <source src="./thecodingkiwivideo.mp4" type="video/mp4">
             </video>
             <h3>The Coding Kiwi</h3>
@@ -179,7 +189,7 @@
           </div>
 
           <div class="project margin-bottomSmall hideme">
-            <img src="./codingclone.png" style="height:350px" alt="CodingDojoClone">
+            <img src="img/codingclone.png" style="height:350px" alt="CodingDojoClone">
             <h3>Coding Dojo Clone</h3>
             <p>Coding Dojo Clone is a clone application duplicating the learning platform for the Coding Dojo bootcamp.
               It incorporates full-stack web development using MERN (MongoDB,
@@ -203,10 +213,13 @@
               <source src="tripsharevideo.mp4" type="video/mp4">
             </video>
             <h3>TripShare</h3>
-            <p>Project inspired by the Airbnb website. <br>
-              <span class='red'>Language: Java. </span>
+            <p>Project inspired by the Airbnb website.
+              <p> Written using Java Spring. 
+                This project was designed to help our friend group make arrangements for in-person meetups.
+              </p>
+              <!-- <span class='red'>Language: Java. </span>
               <span class='blue'>Framework: Spring.</span>
-              <span class='red'>IDE: Spring Tools Suite 4.</span>
+              <span class='red'>IDE: Spring Tools Suite 4.</span> -->
               <ul>
                 <li> Register/Login/Logout </li>
                 <li> Create/Update trip </li>
@@ -222,11 +235,12 @@
           </div>
         </div>
 
-        <div class="container center">
+        <!-- <div class="container center">
           <p style="margin-top:10px; margin-bottom:0px">Area under construction!</p>
           <p style="font-size: 10px; margin:0">More projects coming soon! :)</p>
           <p><i class="fa fa-spinner spin hideme" style="font-size:64px"></i></p>
-        </div>
+        </div> -->
+
       </div>
 
 
@@ -289,7 +303,7 @@
   <script src="./flipLetters.js"></script>
   <script src="./typewriter.js"></script>
   <script src="./navigationBackground.js"></script>
-  <script src="./cursorSparkles.js"></script>
+  <!-- <script src="./cursorSparkles.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./hideme.js"></script>
 
