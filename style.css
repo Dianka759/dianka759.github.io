@@ -263,9 +263,9 @@ a:hover {
 
 .myPic {
 	margin-right: 20px;
-	border-radius: 10%;
-	border: 2px solid rgb(40 40 40);
-	height: 304px;
+	/* border-radius: 10%; */
+	border: 1px solid white;
+	height: 400px;
 }
 
 .something {/* font-size: large; */border: 1px solid;padding: 10px 30px;}
