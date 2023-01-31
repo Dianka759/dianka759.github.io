@@ -1,4 +1,6 @@
-body, footer, button{
+body,
+footer,
+button {
 	/* font-family: "Lato", sans-serif; */
 	font-family: 'Coiny', cursive;
 	/* cursor: none; */
@@ -11,12 +13,13 @@ html {
 	height: 100%;
 	color: rgb(255, 255, 255);
 	line-height: 1.8;
+	padding: .5rem;
 	z-index: 1;
 }
 
 footer p {
 	padding-left: 15px;
-	text-align:center;
+	text-align: center;
 	color: #ececec;
 }
 
@@ -30,16 +33,16 @@ a:hover {
 }
 
 .button {
-    /* border: none; */
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+	/* border: none; */
+	color: white;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
 
 
@@ -52,7 +55,7 @@ a:hover {
 }
 
 .center {
-	text-align:center;
+	text-align: center;
 }
 
 .top {
@@ -60,7 +63,7 @@ a:hover {
 	width: 100vw;
 	text-align: center;
 	z-index: 2;
-	top:0;
+	top: 0;
 }
 
 #myNav {
@@ -71,123 +74,153 @@ a:hover {
 	background-image: linear-gradient(rgb(0, 0, 0), rgb(88, 33, 33));
 }
 
-.opacity-min {opacity:0.75;}
+.opacity-min {
+	opacity: 0.75;
+}
 
-.display-middle {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+.display-middle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
 
-.title {padding: 20px;letter-spacing: 10px;font-size: 40px;}
+.title {
+	padding: 20px;
+	letter-spacing: 10px;
+	font-size: 40px;
+}
 
 .typewrite {
 	margin: 0;
 	text-decoration: none;
 }
 
-.margin-bottomSmall {margin-bottom: 15px;}
+.margin-bottomSmall {
+	margin-bottom: 15px;
+}
 
 
 .video {
 	background-color: red;
 }
 
-.hideme
-{
-    opacity:1;
+.hideme {
+	opacity: 1;
 }
 
 @media only screen and (max-width: 900px) {
 	.something {
-	  width: 300px;
-	  font-size: 12px;
+		width: 300px;
+		font-size: 12px;
 	}
 
 	.flex>img {
 		height: 200px;
 	}
 
-	.title, .title>.cloud-text {
+	.title,
+	.title>.cloud-text {
 		font-size: inherit;
 		width: max-content;
 	}
+
 	.title>.cloud-text {
 		letter-spacing: 0;
 	}
-  }
+}
 
-  .animated_rainbow {
-    font-size: 18px;
-    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
-    -webkit-animation: animatedBackground 5s linear infinite alternate;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: #0000;
-    background-clip: text;
+.animated_rainbow {
+	font-size: 18px;
+	background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+	-webkit-animation: animatedBackground 5s linear infinite alternate;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #0000;
+	background-clip: text;
 }
 
 @keyframes animatedBackground {
-    0% { background-position: 0 0 }
-    100% { background-position: -500px 0 }
+	0% {
+		background-position: 0 0
+	}
+
+	100% {
+		background-position: -500px 0
+	}
 }
 
 
 /* /////////////////////////////////////RESUME BUTTON //////////////////////////////////////// */
 /* https://codepen.io/kocsten/pen/rggjXp */
 
-.resumeContainer {text-align: end;}
+.resumeContainer {
+	text-align: end;
+}
 
 .glow-on-hover {
-    padding: 5px 18px;
-    border: 1px solid darkred;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+	padding: 5px 18px;
+	border: 1px solid darkred;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
 }
 
 .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+	content: '';
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	border-radius: 10px;
 }
 
 .glow-on-hover:active {
-    color: #000
+	color: #000
 }
 
 .glow-on-hover:active:after {
-    background: transparent;
+	background: transparent;
 }
 
 .glow-on-hover:hover:before {
-    opacity: 1;
+	opacity: 1;
 }
 
 .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+	z-index: -1;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
 }
 
 
@@ -197,16 +230,32 @@ a:hover {
 /* Create a Parallax Effect */
 .bgimg-1,
 .bgimg-2,
-.bgimg-3 {background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: 100% 75%;}
+.bgimg-3 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 75%;
+}
 
 /* First image (Logo. Full height) */
-.bgimg-1 {background-image: url('img/img1.jpg');min-height: 100%;/* width: 98vw; */}
+.bgimg-1 {
+	background-image: url('img/img1.jpg');
+	min-height: 100%;
+	/* width: 98vw; */
+}
 
 /* Second image (Portfolio) */
-.bgimg-2 {background-image: url("img/img4.jpg");min-height: 400px;}
+.bgimg-2 {
+	background-image: url("img/img4.jpg");
+	min-height: 400px;
+}
 
 /* Third image (Contact) */
-.bgimg-3 {margin-top: 50px;background-image: url("img/img3.jpg");min-height: 400px;}
+.bgimg-3 {
+	margin-top: 50px;
+	background-image: url("img/img3.jpg");
+	min-height: 400px;
+}
 
 #contact {
 	/* height: 100vh */
@@ -219,12 +268,13 @@ a:hover {
 /*  //////////////////////////// Moving clouds effect //////////////////////// */
 
 @import url('https://fonts.googleapis.com/css?family=Coiny');
+
 .cloud-text {
 	font-family: 'Coiny', cursive;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg);
-	font-size: 35px;
+	font-size: 50px;
 	animation: clouds-moving infinite 30s;
 	animation-play-state: running;
 	animation-timing-function: linear;
@@ -233,11 +283,13 @@ a:hover {
 
 @keyframes clouds-moving {
 	0% {
-		background-position: 0%;	
+		background-position: 0%;
 	}
+
 	50% {
-		background-position: 100%;	
+		background-position: 100%;
 	}
+
 	100% {
 		background-position: 0%;
 	}
@@ -252,12 +304,12 @@ a:hover {
 	margin-top: 15px;
 }
 
-.aboutMe{
+.aboutMe {
 	/* display: flex; */
 	padding: 30px;
 }
 
-.aboutMeRight{
+.aboutMeRight {
 	padding: 0px 10px;
 }
 
@@ -268,7 +320,11 @@ a:hover {
 	height: 400px;
 }
 
-.something {/* font-size: large; */border: 1px solid;padding: 10px 30px;}
+.something {
+	/* font-size: large; */
+	border: 1px solid;
+	padding: 10px 30px;
+}
 
 .aboutMeRight>h1 {
 	box-shadow: 0px 0px 30px -19px lightskyblue;
@@ -291,12 +347,21 @@ a:hover {
 	padding: 25px;
 }
 
-.container:after,.container:before{content:"";display:table;clear:both}
+.container:after,
+.container:before {
+	content: "";
+	display: table;
+	clear: both
+}
 
 
 /*  ///////////////////////////// ICONS section //////////////////////// */
 
-.icon {border-radius: 20%;height: 80px;/* width: 100px; */}
+.icon {
+	border-radius: 20%;
+	height: 80px;
+	/* width: 100px; */
+}
 
 .icons {
 	justify-content: space-around;
@@ -307,7 +372,9 @@ a:hover {
 /*  //////////////////////////////////////////////////////////////////// */
 
 
-.display-container {position: relative;}
+.display-container {
+	position: relative;
+}
 
 .container_bottom {
 	display: flex;
@@ -315,7 +382,10 @@ a:hover {
 	margin-top: 40px;
 }
 
-.myWorkContainer {padding: 20px;/* margin: auto; */}
+.myWorkContainer {
+	padding: 20px;
+	/* margin: auto; */
+}
 
 
 /*  ///////////////////////////// my work projects section //////////////////////// */
@@ -339,59 +409,86 @@ a:hover {
 }
 
 .socialMedia {
-	
-position: sticky;
-	
-z-index: 0;
-	
-margin-top: 3rem;
-	
-font-size: x-large;
-	
-border: 1px solid;
+
+	position: sticky;
+
+	z-index: 0;
+
+	margin-top: 3rem;
+
+	font-size: x-large;
+
+	border: 1px solid;
 }
 
 #home {
-	padding: 1.5rem;
+	padding: 1.5rem 0;
 }
 
 .fa:hover {
 	color: red;
 }
 
-.spin{
-	animation:spin 2s infinite linear
+.spin {
+	animation: spin 2s infinite linear
 }
-	@keyframes spin{
-		0% {transform:rotate(0deg)}
-		100% {transform:rotate(359deg)}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg)
 	}
+
+	100% {
+		transform: rotate(359deg)
+	}
+}
 
 /* //////////////////////////////////////////////////////////////////////////// */
 
-.margin-right {margin-right: 10px;}
+.margin-right {
+	margin-right: 10px;
+}
 
 .containerOverlay {
 	position: relative;
 	width: 38%;
-	}
+}
 
 .containerOverlaySmaller {
 	position: relative;
 	/* width: 38%; */
 }
 
-.overlay {position: absolute;/* top: 10px; *//* bottom: 101px; */left: 0px;right: 0px;opacity: 0;transition: .5s ease;/* background-color: #ba000021; */}
+.overlay {
+	position: absolute;
+	/* top: 10px; */
+	/* bottom: 101px; */
+	left: 0px;
+	right: 0px;
+	opacity: 0;
+	transition: .5s ease;
+	/* background-color: #ba000021; */
+}
 
 .containerOverlay:hover .overlay {
-opacity: 1;
+	opacity: 1;
 }
 
 .containerOverlaySmaller:hover .overlay {
 	opacity: 1;
 }
 
-.text {color: white;font-size: 12px;position: absolute;top: 110%;left: 50%;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);text-align: center;}
+.text {
+	color: white;
+	font-size: 12px;
+	position: absolute;
+	top: 110%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
 
 .iconText>p {
 	margin: 0;
@@ -399,13 +496,13 @@ opacity: 1;
 
 /*  ///////////////////////////// LINKS SECTION //////////////////////// */
 
-.links {		
-display: flex;
-justify-content: space-around;
+.links {
+	display: flex;
+	justify-content: space-around;
 }
 
 .links>p>a {
-	color:rgb(243, 4, 4)
+	color: rgb(243, 4, 4)
 }
 
 .links>p>a:hover {
@@ -418,85 +515,108 @@ justify-content: space-around;
 
 /*  ///////////////////////////// FLIPPY TEXT //////////////////////// */
 
-.text2 {font-size: x-large;}
+.text2 {
+	font-size: x-large;
+}
 
 .text2>p {
-display: inline-block;
-vertical-align: top;
-margin: 0;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
 }
 
 .word {
-position: absolute;
-width: 220px;
-font-weight: bold;
-opacity: 0;
+	position: absolute;
+	width: 220px;
+	font-weight: bold;
+	opacity: 0;
 }
 
 .letter {
-display: inline-block;
-position: relative;
-float: left;
-transform: translateZ(25px);
-transform-origin: 50% 50% 25px;
+	display: inline-block;
+	position: relative;
+	float: left;
+	transform: translateZ(25px);
+	transform-origin: 50% 50% 25px;
 }
 
 .letter.out {
-transform: rotateX(90deg);
-transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	transform: rotateX(90deg);
+	transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .letter.behind {
-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
 }
 
 .letter.in {
-transform: rotateX(0deg);
-transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transform: rotateX(0deg);
+	transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .orange {
-color: #e45706;
+	color: #e45706;
 }
 
 .blue {
-color: #2980b9;
+	color: #2980b9;
 }
 
 .yellow {
-color: #ebd516;
+	color: #ebd516;
 }
 
 
 .red {
-color: #f10800;
+	color: #f10800;
 }
 
 .margin-bottom {
-margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
-.flex {justify-content: center;align-items: center;display: flex;}
+.flex {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
 
 /*  /////////////////////////////////////////////////////////////////////////////// */
 
 /*  ///////////////// Send me a message button, border animation ///////////////// */
 
-.svg-wrapper {width: fit-content;text-align: -webkit-center;height: 70px;margin-top: 10px;}
-.shape {
-stroke-dasharray: 140 540;
-stroke-dashoffset: -474;
-stroke-width: 2px;
-fill: transparent;
-stroke: #0074c1;
-/* border-bottom: 5px solid black; */
-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+.svg-wrapper {
+	width: fit-content;
+	text-align: -webkit-center;
+	height: 70px;
+	margin-top: 10px;
 }
-.text3 {width: fit-content;font-family: 'Roboto Condensed';font-size: 20px;line-height: 32px;letter-spacing: 8px;color: #fff;top: -60px;position: relative;}
+
+.shape {
+	stroke-dasharray: 140 540;
+	stroke-dashoffset: -474;
+	stroke-width: 2px;
+	fill: transparent;
+	stroke: #0074c1;
+	/* border-bottom: 5px solid black; */
+	transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.text3 {
+	width: fit-content;
+	font-family: 'Roboto Condensed';
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 8px;
+	color: #fff;
+	top: -60px;
+	position: relative;
+}
+
 .svg-wrapper:hover .shape {
-stroke-width: 2px;
-stroke-dashoffset: 0;
-stroke-dasharray: 760;
+	stroke-width: 2px;
+	stroke-dashoffset: 0;
+	stroke-dasharray: 760;
 }
 
 /*  /////////////////////////////////////////////////////////////////////////////////// */
@@ -506,7 +626,7 @@ stroke-dasharray: 760;
 .backgroundRed {
 	background-color: rgb(0, 0, 0) !important;
 	transition: background-color 200ms ease-in-out;
-	}
+}
 
 /***********************  CURSOR ANIMATION  ***************************/
 .happyTrail {
@@ -543,7 +663,7 @@ stroke-dasharray: 760;
 
 	80% {
 		background: #00f;
-			opacity: 0.8;
+		opacity: 0.8;
 	}
 
 	100% {
